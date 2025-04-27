@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MimicAI - Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <input type="checkbox" id="translate_checkbox"> 
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="controls">
+            <select id="model_select">
+                <option value="openai/gpt-4o">GPT-4o</option>
+                <option value="openai/gpt-3.5-turbo">GPT-3.5 Turbo</option>
+            </select>
+            <select id="style_select">
+                <option value="realistic">Реализм</option>
+                <option value="anime">Аниме</option>
+                <option value="oil">Масляная живопись</option>
+                <option value="cyberpunk">Киберпанк</option>
+            </select>
+        </div>
+        <div class="avatar">
+            <img id="user_avatar" src="assets/user_default.png" alt="User Avatar">
+        </div>
+    </div>
+
+    <div id="chat" class="chat"></div>
+
+    <div class="input-area">
+        <textarea id="user_input" placeholder="Введите сообщение..." rows="1"></textarea>
+        <button id="send_button">➤</button>
+        <button id="generate_image_button">🎨</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
