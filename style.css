@@ -178,28 +178,61 @@ button {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+        font-size: 16px;
+    }
+
+    .header {
+        padding: 12px;
+    }
+
+    .controls select {
+        padding: 8px;
+        font-size: 16px;
+    }
+
     .chat {
-        padding: 20px;
-        margin-bottom: 80px;
+        padding: 12px;
+        margin-bottom: 70px;
     }
 
     .message {
         font-size: 16px;
         padding: 12px;
+        border-radius: 12px;
+    }
+
+    .user, .bot {
+        max-width: 90%;
+    }
+
+    .message img {
+        width: 40px;
+        height: 40px;
     }
 
     .input-area {
-        padding: 15px;
+        padding: 10px;
+        bottom: 0;
+        background-color: #2b2b2b;
     }
 
     textarea {
         font-size: 16px;
         padding: 12px;
+        height: 48px;
+        border-radius: 12px;
     }
 
     button {
-        font-size: 20px;
+        font-size: 18px;
         padding: 12px 18px;
+        border-radius: 12px;
+    }
+
+    .typing-indicator {
+        margin: 10px 0;
     }
 }
